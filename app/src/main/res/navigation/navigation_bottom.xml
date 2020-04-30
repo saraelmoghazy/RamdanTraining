@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_bottom"
+    app:startDestination="@id/design">
+
+    <fragment
+        android:id="@+id/design"
+        android:name="com.example.ramdantraining.fragments.DesignFragment"
+        android:label="fragment_design"
+        tools:layout="@layout/fragment_design" />
+    <fragment
+        android:id="@+id/material_designn"
+        android:name="com.example.ramdantraining.fragments.MaterialDesignFragment"
+        android:label="fragment_material_design"
+        tools:layout="@layout/fragment_material_design" />
+    <fragment
+        android:id="@+id/navigation"
+        android:name="com.example.ramdantraining.fragments.NavigationFragment"
+        android:label="fragment_navigation"
+        tools:layout="@layout/fragment_navigation" />
+</navigation>

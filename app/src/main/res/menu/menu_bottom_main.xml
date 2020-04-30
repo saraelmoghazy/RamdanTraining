@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/design"
+        android:icon="@drawable/ic_design"
+        android:title="@string/design"/>
+
+    <item
+        android:id="@+id/navigation"
+        android:title="@string/navigation"
+        android:icon="@drawable/ic_navigation"
+        />
+
+    <item
+        android:title="Material Design"
+        android:id="@+id/material_designn"
+        android:icon="@drawable/ic_android"
+        />
+
+
+</menu>
