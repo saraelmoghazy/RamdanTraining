@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.example.ramdantraining.View.Welcome.WelcomeFragment"
+        android:label="Welcome">
+        <action
+            android:id="@+id/action_welcomeFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_signupFragment"
+            app:destination="@id/signupFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_movieFragment"
+            app:destination="@id/movieFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.ramdantraining.View.Login.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/login_fragment">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="name"
+            android:defaultValue="name"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="password"
+            android:defaultValue="password"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupFragment"
+        android:name="com.example.ramdantraining.View.Signup.SignupFragment"
+        android:label="Signup"
+        tools:layout="@layout/signup_fragment">
+        <action
+            android:id="@+id/action_signupFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/signupFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="name"
+            android:defaultValue="name"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="email"
+            android:defaultValue="email@gmail.com"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="password"
+            android:defaultValue="password"
+            app:argType="string"
+            app:nullable="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/leaderBoardFragment"
+        android:name="com.example.ramdantraining.View.LeaderBoard.LeaderBoardFragment"
+        android:label="Leaderboard"
+        tools:layout="@layout/leader_board_fragment">
+        <action
+            android:id="@+id/action_leaderBoardFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/matchFragment"
+        android:name="com.example.ramdantraining.View.Match.MatchFragment"
+        android:label="Match"
+        tools:layout="@layout/match_fragment">
+        <action
+            android:id="@+id/action_matchFragment_to_quizFragment"
+            app:destination="@id/quizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.ramdantraining.View.Quiz.QuizFragment"
+        android:label="Quiz"
+        tools:layout="@layout/quiz_fragment">
+        <action
+            android:id="@+id/action_quizFragment_to_congratsFragment"
+            app:destination="@id/congratsFragment" />
+        <action
+            android:id="@+id/action_quizFragment_to_gameOverFragment"
+            app:destination="@id/gameOverFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameOverFragment"
+        android:name="com.example.ramdantraining.View.GameOver.GameOverFragment"
+        android:label="Game over"
+        tools:layout="@layout/game_over_fragment">
+        <action
+            android:id="@+id/action_gameOverFragment_to_matchFragment"
+            app:destination="@id/matchFragment" />
+        <action
+            android:id="@+id/action_gameOverFragment_to_homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/congratsFragment"
+        android:name="com.example.ramdantraining.View.Congrats.CongratsFragment"
+        android:label="Congrats"
+        tools:layout="@layout/congrats_fragment">
+        <action
+            android:id="@+id/action_congratsFragment_to_leaderBoardFragment"
+            app:destination="@id/leaderBoardFragment" />
+        <!--        app:destination="@id/leaderBoardFragment"-->
+
+        <action
+            android:id="@+id/action_congratsFragment_to_matchFragment"
+            app:popUpTo="@id/matchFragment" />
+        <action
+            android:id="@+id/action_congratsFragment_to_homeFragment"
+            app:popUpTo="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.ramdantraining.View.Home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_leaderBoardFragment"
+            app:destination="@id/leaderBoardFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_matchFragment"
+            app:destination="@id/matchFragment" />
+        <argument
+            android:name="name"
+            android:defaultValue="name"
+            app:argType="string"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.ramdantraining.View.Profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/profile_fragment">
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="http://www.example.com/users/{id}" />
+    </fragment>
+    <fragment
+        android:id="@+id/movieFragment"
+        android:name="com.example.ramdantraining.View.MovieScreen.MovieFragment"
+        android:label="movie Screen"
+        tools:layout="@layout/movie_fragment" />
+</navigation>

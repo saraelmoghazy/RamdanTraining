@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RamdanTraining</string>
+    <string name="leaderboard"><b><u>LeaderBoard</u></b></string>
+    <string name="movieScreen"><b><u>Movie Screen</u></b></string>
+    <string name="vs">VS</string>
+    <string name="invalidName">Invalid Name</string>
+    <string name="invalidEmail">Invalid Email</string>
+
 </resources>
