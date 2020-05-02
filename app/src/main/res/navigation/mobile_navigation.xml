@@ -154,7 +154,7 @@
         tools:layout="@layout/profile_fragment">
         <deepLink
             android:id="@+id/deepLink"
-            app:uri="http://www.example.com/users/{id}" />
+            app:uri="http://www.example.com/users/" />
     </fragment>
     <fragment
         android:id="@+id/movieFragment"
