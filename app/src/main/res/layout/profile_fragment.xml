@@ -22,7 +22,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/colorPrimary"
-            tools:context=".View.Profile.ProfileFragment">
+            tools:context=".View.QuizApp.Profile.ProfileFragment">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView"

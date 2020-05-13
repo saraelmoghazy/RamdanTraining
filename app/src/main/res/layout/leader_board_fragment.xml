@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.LeaderBoard.LeaderBoardFragment" >
+    tools:context=".View.QuizApp.LeaderBoard.LeaderBoardFragment" >
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/leaderBoard_rv"

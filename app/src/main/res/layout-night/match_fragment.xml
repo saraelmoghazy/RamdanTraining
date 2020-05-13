@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.Match.MatchFragment"
+    tools:context=".View.QuizApp.Match.MatchFragment"
     android:background="@color/DarkGrayColor">
 
     <de.hdodenhof.circleimageview.CircleImageView

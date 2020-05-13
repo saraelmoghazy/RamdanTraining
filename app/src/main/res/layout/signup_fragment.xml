@@ -19,7 +19,7 @@
             android:id="@+id/frameLayout3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:context=".View.Signup.SignupFragment">
+            tools:context=".View.QuizApp.Signup.SignupFragment">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline3"

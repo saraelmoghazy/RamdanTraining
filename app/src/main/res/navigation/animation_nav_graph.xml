@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/animSplashFragment">
+    <fragment
+        android:id="@+id/animSplashFragment"
+        android:name="com.example.ramdantraining.View.AnimationApp.Splash.AnimSplashFragment"
+        android:label="splash"
+        tools:layout="@layout/fragment_anim_splash">
+        <action
+            android:id="@+id/action_animSplashFragment_to_animHomeFragment"
+            app:destination="@id/animHomeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animHomeFragment"
+        android:name="com.example.ramdantraining.View.AnimationApp.Home.AnimHomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_animHomeFragment_to_animMotionFragment"
+            app:destination="@id/animMotionFragment" />
+        <action
+            android:id="@+id/action_animHomeFragment_to_animShimmerFragment"
+            app:destination="@id/animShimmerFragment" />
+        <action
+            android:id="@+id/action_animHomeFragment_to_animShapeFragment"
+            app:destination="@id/animShapeFragment" />
+        <action
+            android:id="@+id/action_animHomeFragment_to_animItemFragment"
+            app:destination="@id/animItemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/animMotionFragment"
+        android:name="com.example.ramdantraining.View.AnimationApp.Motionlayout.AnimMotionFragment"
+        android:label="MotionLayout">
+        <deepLink
+            android:id="@+id/deepLink2"
+            app:uri="www.example.com/motion" />
+    </fragment>
+    <fragment
+        android:id="@+id/animItemFragment"
+        android:name="com.example.ramdantraining.View.AnimationApp.ItemAnimation.AnimItemFragment"
+        android:label="Animation Item"
+        tools:layout="@layout/fragment_anim_item" />
+    <fragment
+        android:id="@+id/animShapeFragment"
+        android:name="com.example.ramdantraining.View.AnimationApp.AnimationShape.AnimShapeFragment"
+        android:label="Animation shape"
+        tools:layout="@layout/fragment_anim_shape" />
+    <fragment
+        android:id="@+id/animShimmerFragment"
+        android:name="com.example.ramdantraining.View.AnimationApp.Shimmer.AnimShimmerFragment"
+        android:label="Shimmer"
+        tools:layout="@layout/fragment_anim_shimmer" />
+</navigation>

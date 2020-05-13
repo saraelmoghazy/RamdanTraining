@@ -6,6 +6,9 @@ public class UserModel {
     String userName;
     String userPoint;
     int UserPhoto;
+    String userTitle;
+    String userBody;
+
 
     public int getUserID() {
         return userID;
@@ -16,6 +19,29 @@ public class UserModel {
         this.userName = userName;
         this.userPoint = userPoint;
         UserPhoto = userPhoto;
+    }
+
+    public UserModel(String userName, int userPhoto, String userTitle, String userBody) {
+        this.userName = userName;
+        UserPhoto = userPhoto;
+        this.userTitle = userTitle;
+        this.userBody = userBody;
+    }
+
+    public String getUserTitle() {
+        return userTitle;
+    }
+
+    public void setUserTitle(String userTitle) {
+        this.userTitle = userTitle;
+    }
+
+    public String getUserBody() {
+        return userBody;
+    }
+
+    public void setUserBody(String userBody) {
+        this.userBody = userBody;
     }
 
     public void setUserID(int userID) {

@@ -12,4 +12,7 @@
     <color name="DarkGreenColor">#519E70</color>
     <color name="RedColor">#FF6776</color>
     <color name="PurpleColor">#BC9EDE</color>
+    <color name="BackgroundColor">#dddddd</color>
+
+
 </resources>

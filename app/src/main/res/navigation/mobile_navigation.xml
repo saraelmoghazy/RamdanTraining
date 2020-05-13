@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/welcomeFragment"
-        android:name="com.example.ramdantraining.View.Welcome.WelcomeFragment"
+        android:name="com.example.ramdantraining.View.QuizApp.Welcome.WelcomeFragment"
         android:label="Welcome">
         <action
             android:id="@+id/action_welcomeFragment_to_loginFragment"
@@ -21,7 +21,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.ramdantraining.View.Login.LoginFragment"
+        android:name="com.example.ramdantraining.View.QuizApp.Login.LoginFragment"
         android:label="Login"
         tools:layout="@layout/login_fragment">
         <action
@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/signupFragment"
-        android:name="com.example.ramdantraining.View.Signup.SignupFragment"
+        android:name="com.example.ramdantraining.View.QuizApp.Signup.SignupFragment"
         android:label="Signup"
         tools:layout="@layout/signup_fragment">
         <action
@@ -68,7 +68,7 @@
     </fragment>
     <fragment
         android:id="@+id/leaderBoardFragment"
-        android:name="com.example.ramdantraining.View.LeaderBoard.LeaderBoardFragment"
+        android:name="com.example.ramdantraining.View.QuizApp.LeaderBoard.LeaderBoardFragment"
         android:label="Leaderboard"
         tools:layout="@layout/leader_board_fragment">
         <action
@@ -77,7 +77,7 @@
     </fragment>
     <fragment
         android:id="@+id/matchFragment"
-        android:name="com.example.ramdantraining.View.Match.MatchFragment"
+        android:name="com.example.ramdantraining.View.QuizApp.Match.MatchFragment"
         android:label="Match"
         tools:layout="@layout/match_fragment">
         <action
@@ -86,7 +86,7 @@
     </fragment>
     <fragment
         android:id="@+id/quizFragment"
-        android:name="com.example.ramdantraining.View.Quiz.QuizFragment"
+        android:name="com.example.ramdantraining.View.QuizApp.Quiz.QuizFragment"
         android:label="Quiz"
         tools:layout="@layout/quiz_fragment">
         <action
@@ -98,7 +98,7 @@
     </fragment>
     <fragment
         android:id="@+id/gameOverFragment"
-        android:name="com.example.ramdantraining.View.GameOver.GameOverFragment"
+        android:name="com.example.ramdantraining.View.QuizApp.GameOver.GameOverFragment"
         android:label="Game over"
         tools:layout="@layout/game_over_fragment">
         <action
@@ -110,7 +110,7 @@
     </fragment>
     <fragment
         android:id="@+id/congratsFragment"
-        android:name="com.example.ramdantraining.View.Congrats.CongratsFragment"
+        android:name="com.example.ramdantraining.View.QuizApp.Congrats.CongratsFragment"
         android:label="Congrats"
         tools:layout="@layout/congrats_fragment">
         <action
@@ -127,7 +127,7 @@
     </fragment>
     <fragment
         android:id="@+id/homeFragment"
-        android:name="com.example.ramdantraining.View.Home.HomeFragment"
+        android:name="com.example.ramdantraining.View.QuizApp.Home.HomeFragment"
         android:label="Home"
         tools:layout="@layout/home_fragment">
         <action
@@ -149,7 +149,7 @@
     </fragment>
     <fragment
         android:id="@+id/profileFragment"
-        android:name="com.example.ramdantraining.View.Profile.ProfileFragment"
+        android:name="com.example.ramdantraining.View.QuizApp.Profile.ProfileFragment"
         android:label="Profile"
         tools:layout="@layout/profile_fragment">
         <deepLink
@@ -158,7 +158,7 @@
     </fragment>
     <fragment
         android:id="@+id/movieFragment"
-        android:name="com.example.ramdantraining.View.MovieScreen.MovieFragment"
+        android:name="com.example.ramdantraining.View.QuizApp.MovieScreen.MovieFragment"
         android:label="movie Screen"
         tools:layout="@layout/movie_fragment" />
 </navigation>

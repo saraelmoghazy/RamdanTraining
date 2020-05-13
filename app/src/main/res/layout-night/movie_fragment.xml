@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/DarkGrayColor">
+    android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="0dp"
@@ -19,7 +19,7 @@
             android:id="@+id/frameLayout9"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".View.MovieScreen.MovieFragment">
+            tools:context=".View.QuizApp.MovieScreen.MovieFragment">
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline23"
@@ -62,7 +62,8 @@
                 app:layout_constraintBottom_toBottomOf="@+id/imageView5"
                 app:layout_constraintEnd_toStartOf="@+id/imageView6"
                 app:layout_constraintStart_toEndOf="@+id/imageView5"
-                app:layout_constraintTop_toTopOf="@+id/imageView5" />
+                app:layout_constraintTop_toTopOf="@+id/imageView5"
+                android:gravity="center_horizontal" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -95,8 +96,8 @@
                 android:layout_marginRight="8dp"
                 android:insetTop="0dp"
                 android:insetBottom="0dp"
-                android:text="rent from R29.99"
                 android:textColor="@color/WhiteColor"
+                android:text="rent from R29.99"
                 app:cornerRadius="@dimen/_16sdp"
                 app:layout_constraintEnd_toStartOf="@+id/signup_btn2"
                 app:layout_constraintStart_toStartOf="@+id/guideline23"
@@ -110,9 +111,9 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:insetTop="0dp"
+                android:textColor="@color/WhiteColor"
                 android:insetBottom="0dp"
                 android:text="buy from R129.99"
-                android:textColor="@color/WhiteColor"
                 app:cornerRadius="@dimen/_16sdp"
                 app:layout_constraintEnd_toStartOf="@+id/guideline25"
                 app:layout_constraintStart_toEndOf="@+id/signup_btn"
@@ -157,12 +158,15 @@
                 android:id="@+id/avatar_img"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:layout_margin="@dimen/_16sdp"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
                 android:src="@drawable/ic_launcher_background"
-                app:layout_constraintDimensionRatio="w,65:65"
+                app:layout_constraintBottom_toTopOf="@+id/textView11"
                 app:layout_constraintEnd_toStartOf="@+id/avatar_img2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
                 app:layout_constraintStart_toStartOf="@+id/guideline23"
                 app:layout_constraintTop_toBottomOf="@+id/view" />
 
@@ -170,34 +174,41 @@
                 android:id="@+id/avatar_img2"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:layout_margin="@dimen/_16sdp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:src="@drawable/ic_launcher_background"
-                app:layout_constraintDimensionRatio="w,65:65"
                 app:layout_constraintEnd_toStartOf="@+id/avatar_img3"
+                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/avatar_img"
-                app:layout_constraintTop_toBottomOf="@+id/view" />
+                app:layout_constraintTop_toTopOf="@+id/avatar_img" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/avatar_img3"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:layout_margin="@dimen/_16sdp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
                 android:src="@drawable/ic_launcher_background"
-                app:layout_constraintDimensionRatio="w,65:65"
                 app:layout_constraintEnd_toStartOf="@+id/avatar_img4"
+                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/avatar_img2"
-                app:layout_constraintTop_toBottomOf="@+id/view" />
+                app:layout_constraintTop_toTopOf="@+id/avatar_img2" />
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/avatar_img4"
                 android:layout_width="65dp"
                 android:layout_height="65dp"
-                android:layout_margin="@dimen/_16sdp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
                 android:src="@drawable/ic_launcher_background"
-                app:layout_constraintDimensionRatio="w,65:65"
                 app:layout_constraintEnd_toStartOf="@+id/guideline25"
+                app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toEndOf="@+id/avatar_img3"
-                app:layout_constraintTop_toBottomOf="@+id/view" />
+                app:layout_constraintTop_toTopOf="@+id/avatar_img3" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -268,6 +279,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/guideline25"
                 app:layout_constraintStart_toStartOf="@+id/guideline23"
                 app:layout_constraintTop_toBottomOf="@+id/view2" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

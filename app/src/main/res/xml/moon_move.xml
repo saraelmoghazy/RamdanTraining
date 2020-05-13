@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        app:constraintSetEnd="@+id/end"
+        app:constraintSetStart="@+id/start"
+        app:duration="3500">
+        <OnSwipe
+            app:touchAnchorId="@+id/moon_img"
+            motion:dragDirection="dragRight"
+            motion:touchAnchorSide="right" />
+
+        <OnClick
+            app:clickAction="toggle"
+            app:targetId="@+id/moon_img" />
+        <KeyFrameSet>
+
+            <KeyAttribute
+                app:framePosition="85"
+                app:motionTarget="@id/motion_tv"
+                android:alpha="1.0"
+                />
+            <KeyAttribute
+                app:framePosition="0"
+                app:motionTarget="@id/motion_tv"
+                android:alpha="0"
+                />
+            <KeyAttribute
+                app:framePosition="50"
+                app:motionTarget="@id/moon_img"
+                android:scaleY="2.0"
+                android:scaleX="2.0"
+                android:rotation="-360"
+                />
+            <KeyAttribute
+                app:framePosition="100"
+                app:motionTarget="@id/moon_img"
+                android:rotation="-720"
+                />
+            <KeyPosition
+                app:framePosition="10"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/moon_img"
+                app:percentX="0.3"
+                app:percentY="0.7" />
+            <KeyPosition
+                app:framePosition="25"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/moon_img"
+                app:percentX="0.1"
+                app:percentY="0.4" />
+            <KeyPosition
+                app:framePosition="50"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/moon_img"
+                app:percentY="0.1" />
+            <KeyPosition
+                app:framePosition="75"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/moon_img"
+                app:percentX="0.9"
+                app:percentY="0.4" />
+            <KeyPosition
+                app:framePosition="90"
+                app:keyPositionType="parentRelative"
+                app:motionTarget="@id/moon_img"
+                app:percentX="0.7"
+                app:percentY="0.7" />
+        </KeyFrameSet>
+    </Transition>
+
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/moon_img"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintStart_toStartOf="parent">
+
+        </Constraint>
+    </ConstraintSet>
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/moon_img"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent">
+        </Constraint>
+<!--        <CustomAttribute-->
+<!--            motion:attributeName="backgroundColor"-->
+<!--            motion:customColorValue="@color/DarkGreenColor" />-->
+    </ConstraintSet>
+</MotionScene>
